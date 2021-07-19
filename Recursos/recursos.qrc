@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/Imagenes">
+        <file>salvar.png</file>
+        <file>grafico-de-barras.png</file>
+    </qresource>
+</RCC>

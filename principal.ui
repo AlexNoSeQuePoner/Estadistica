@@ -31,6 +31,10 @@
   <property name="windowTitle">
    <string>Principal</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="Recursos/recursos.qrc">
+    <normaloff>:/Imagenes/grafico-de-barras.png</normaloff>:/Imagenes/grafico-de-barras.png</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout_2">
     <item>
@@ -139,14 +143,30 @@
    </property>
    <widget class="QMenu" name="menuArchivo">
     <property name="title">
-     <string>Archivo</string>
+     <string>&amp;Archivo</string>
     </property>
     <addaction name="actionGuardar"/>
    </widget>
    <addaction name="menuArchivo"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionGuardar"/>
+  </widget>
   <action name="actionGuardar">
+   <property name="icon">
+    <iconset resource="Recursos/recursos.qrc">
+     <normaloff>:/Imagenes/salvar.png</normaloff>:/Imagenes/salvar.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Guardar</string>
    </property>
@@ -155,6 +175,8 @@
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="Recursos/recursos.qrc"/>
+ </resources>
  <connections/>
 </ui>
